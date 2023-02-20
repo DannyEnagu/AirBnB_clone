@@ -1,0 +1,88 @@
+ul {
+    list-style-type: none;
+}
+
+.filters {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 90%;
+}
+.filters_items {
+    height: 100%;
+    display: flex;
+}
+.filters_items .locations,
+.filters_items .amenities {
+    width: 25%;
+}
+
+.filters_items .locations .summary,
+.filters_items .amenities .summary {
+    padding-left: 40px;
+}
+
+.filters_items .locations h3,
+.filters_items .amenities h3 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.filters_items .locations h4,
+.filters_items .amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.filters_items .locations {
+    border-right:1px solid #DDDDDD;
+}
+
+.popover {
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+.filters_items .locations .popover {
+    padding: 0 20px 20px;
+}
+
+.filters_items .amenities .popover {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.filters_items .locations:hover .popover,
+.filters_items .amenities:hover .popover {
+    display: block;
+}
+
+.popover li h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
